@@ -12,11 +12,12 @@ public class AddService {
 	private RestTemplate restTemplate;
 
 	@HystrixCommand(fallbackMethod = "addServiceFallBack")
-	public Integer add() {
-		return restTemplate.getForEntity("http://ADD-SERVICE/add?a=10&b=20", Integer.class).getBody();
+	public Integer add(Integer a, Integer b) {
+		return restTemplate.getForEntity(String.format("http://ADD-SERVICE/add?a=%s&b=%s", a, b), Integer.class)
+				.getBody();
 	}
-	
-	public Integer addServiceFallBack() {
+
+	public Integer addServiceFallBack(Integer a, Integer b) {
 		return 0;
 	}
 }
