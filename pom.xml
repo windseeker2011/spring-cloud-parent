@@ -29,5 +29,6 @@
 		<module>eureka-client3</module>
 		<module>ribbon-server</module>
 		<module>feign-server</module>
+		<module>zuul-server</module>
 	</modules>
 </project>
