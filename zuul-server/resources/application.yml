@@ -1,0 +1,18 @@
+server:
+  port: 5555
+
+spring:
+  application:
+    name: zuul-server
+
+zuul:
+  routes:
+    api:
+      path: /api/**
+      service-id: add-service
+ 
+eureka:
+  client:
+    service-url:
+      defaultZone: http://192.168.1.88:1111/eureka/
+  
