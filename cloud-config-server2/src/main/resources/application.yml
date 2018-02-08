@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: cloud-config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://git.coding.net/liweihai/spring-cloud-config.git
+          username: liweihai
+          password: lwh123
+server:
+  port: 7772
+eureka:
+  client:
+    service-url:
+      defaultZone: http://server1:1111/eureka/,http://server2:1112/eureka/,http://server3:1113/eureka/

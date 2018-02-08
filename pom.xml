@@ -23,6 +23,8 @@
 	</parent>
 
 	<modules>
+		<module>cloud-config-server</module>
+		<module>cloud-config-server2</module>
 		<module>eureka-server</module>
 		<module>eureka-server2</module>
 		<module>eureka-server3</module>
