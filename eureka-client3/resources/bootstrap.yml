@@ -1,0 +1,16 @@
+server:
+  port: 2223
+spring:
+  application:
+    name: add-service
+  cloud:
+    config:
+      profile: production
+      label: master
+      discovery:
+        enabled: true
+        service-id: cloud-config-server
+eureka:
+  client:
+    service-url:
+      defaultZone: http://server1:1111/eureka/,http://server2:1112/eureka/,http://server3:1113/eureka/
