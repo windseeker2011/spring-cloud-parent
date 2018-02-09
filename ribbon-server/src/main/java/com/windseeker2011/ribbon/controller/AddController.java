@@ -13,6 +13,11 @@ public class AddController {
 	@Autowired
 	private AddService addService;
 
+	@RequestMapping(value = "/", method = RequestMethod.GET)
+	public String getConfigName() {
+		return addService.getConfigName();
+	}
+
 	@RequestMapping(value = "/add", method = RequestMethod.GET)
 	public Integer add(@RequestParam Integer a, @RequestParam Integer b) {
 		return addService.add(a, b);

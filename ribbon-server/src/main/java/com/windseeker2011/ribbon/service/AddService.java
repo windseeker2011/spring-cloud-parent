@@ -11,6 +11,15 @@ public class AddService {
 	@Autowired
 	private RestTemplate restTemplate;
 
+	@HystrixCommand(fallbackMethod = "getConfigNameFallBack")
+	public String getConfigName() {
+		return restTemplate.getForEntity("http://ADD-SERVICE/", String.class).getBody();
+	}
+
+	public String getConfigNameFallBack() {
+		return "add-service";
+	}
+
 	@HystrixCommand(fallbackMethod = "addServiceFallBack")
 	public Integer add(Integer a, Integer b) {
 		return restTemplate.getForEntity(String.format("http://ADD-SERVICE/add?a=%s&b=%s", a, b), Integer.class)

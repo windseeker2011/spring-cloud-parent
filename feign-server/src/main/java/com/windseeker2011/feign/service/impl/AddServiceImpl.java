@@ -8,6 +8,11 @@ import com.windseeker2011.feign.service.AddService;
 public class AddServiceImpl implements AddService {
 
 	@Override
+	public String getConfigName() {
+		return "add-service";
+	}
+
+	@Override
 	public Integer add(Integer a, Integer b) {
 		return 0;
 	}

@@ -10,6 +10,10 @@ import com.windseeker2011.feign.service.impl.AddServiceImpl;
 @FeignClient(value = "ADD-SERVICE", fallback = AddServiceImpl.class)
 public interface AddService {
 
+	@RequestMapping(value = "/", method = RequestMethod.GET)
+	public String getConfigName();
+
 	@RequestMapping(value = "/add", method = RequestMethod.GET)
 	public Integer add(@RequestParam(value = "a") Integer a, @RequestParam(value = "b") Integer b);
+
 }
