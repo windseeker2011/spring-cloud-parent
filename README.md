@@ -16,4 +16,4 @@
 `子项目ribbon-server、feign-server都支持Hystrix断路器。Feign天然支持Hystrix。`
 # 智能路由（Zuul）
 
-#动态配置（cloud-config-server）
+# 动态配置（cloud-config-server）
