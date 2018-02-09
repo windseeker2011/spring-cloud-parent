@@ -7,6 +7,7 @@
 `应用网关：http://localhost:5555/api/add?a=1&b=2`<br/>
 # 服务发现（Eureka）
 `子项目eureka-server为服务发现服务端、子项目eureka-client*为服务发现客户端`
+### server1、server2、server3都是在hosts文件配置指向本机。 ###
 # 客户端负载均衡（Ribbon）
 `子项目ribbon-server为前置服务器。`
 # 客户端负载均衡（Feign）
