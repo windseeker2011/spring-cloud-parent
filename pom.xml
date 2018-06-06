@@ -35,6 +35,7 @@
 		<module>ribbon-server</module>
 		<module>feign-server</module>
 		<module>zuul-server</module>
+		<module>zipkin-server</module>
 	</modules>
 
 	<dependencyManagement>
@@ -42,7 +43,7 @@
 			<dependency>
 				<groupId>org.springframework.cloud</groupId>
 				<artifactId>spring-cloud-dependencies</artifactId>
-				<version>Edgware.RELEASE</version>
+				<version>Edgware.SR3</version>
 				<type>pom</type>
 				<scope>import</scope>
 			</dependency>

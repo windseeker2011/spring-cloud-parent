@@ -1,0 +1,10 @@
+server:
+  port: 9411
+spring:
+  application:
+    name: zipkin-server
+  datasource:
+    url: jdbc:mysql://192.168.1.210:3306/zipkin?autoReconnect=true&useUnicode=true&characterEncoding=UTF-8
+    username: ehealth
+    password: eaphone
+    driver-class-name: com.mysql.jdbc.Driver
