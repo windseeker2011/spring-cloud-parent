@@ -1,5 +1,5 @@
 # 项目介绍
-## 本项目介绍spring-cloud微服务架构，采用Zuul+Feign/Rubbon+Hystrix+Eureka+cloud-config-server等技术实现。 ##
+## 本项目介绍spring-cloud微服务架构，采用Zuul+Feign/Ribbon+Hystrix+Eureka+cloud-config-server等技术实现。 ##
 ### 测试地址 ###
 `服务注册中心：http://localhost:1111/`<br/>
 `服务实际提供方：http://localhost:2223/add?a=1&b=2`<br/>
